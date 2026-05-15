@@ -133,8 +133,10 @@
       .nav-inner { padding:0 16px; height:60px; }
       .nav-inner > div:first-child { gap:0; }
       .nav-inner > div:first-child .nav-link { display:none; }
+      .nav-inner > div:first-child img { height:40px !important; margin-top:0 !important; }
       .nav-links { display:none; }
       .nav-hamburger { display:flex; }
+      .mob-call { display:flex; }
 
       /* HERO — headline first, no dead space */
       .hero-section { padding:20px 20px 28px; min-height:auto; justify-content:flex-start; }
@@ -240,6 +242,11 @@
         <a href="#pricing" class="nav-link">Pricing</a>
         <a href="tel:+447988038043" style="display:flex;flex-direction:column;align-items:flex-end;gap:1px;text-decoration:none;line-height:1;" onmouseover="this.querySelector('span').style.transform='scale(1.15)'" onmouseout="this.querySelector('span').style.transform='scale(1)'"><small style="font-size:8px;font-weight:700;letter-spacing:0.22em;text-transform:uppercase;color:rgba(255,255,255,0.35);">Call Us</small><span style="font-size:20px;font-weight:900;letter-spacing:-0.02em;color:#fff;transition:transform 0.2s;display:inline-block;transform-origin:right center;">+44 7988 038043</span></a>
       </div>
+      <!-- Mobile-only call us -->
+      <a href="tel:+447988038043" class="mob-call" style="display:none;flex-direction:column;align-items:flex-end;gap:1px;text-decoration:none;line-height:1;">
+        <small style="font-size:7px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:rgba(255,255,255,0.35);">Call Us</small>
+        <span style="font-size:15px;font-weight:900;letter-spacing:-0.02em;color:#fff;">+44 7988 038043</span>
+      </a>
       <button class="nav-hamburger" id="menu-btn" aria-label="Menu">
         <span></span><span></span><span></span>
       </button>
