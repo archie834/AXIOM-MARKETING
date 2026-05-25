@@ -166,13 +166,12 @@
       .process-row.expanded .process-chevron { transform:rotate(180deg); }
       #how { padding:24px 20px !important; }
       #how .section-header { margin-bottom:16px !important; }
-      /* Work cards — shorter on mobile so both visible */
-      #work .work-grid a[style*="min-height:600px"] { min-height:150px !important; }
-      #work .work-grid div[style*="min-height:600px"] { min-height:150px !important; }
-      #work .work-grid a h3 { font-size:16px !important; margin-bottom:4px !important; }
+      /* Work cards — fixed height on mobile */
+      #work .work-grid > div > a { height:160px !important; min-height:0 !important; overflow:hidden !important; }
+      #work .work-grid > div > a > div { min-height:0 !important; height:160px !important; padding:10px !important; }
+      #work .work-grid a h3 { font-size:15px !important; margin-bottom:0 !important; }
       #work .work-grid a p { display:none !important; }
       #work .work-grid a span { display:none !important; }
-      #work .work-grid a > div { padding:12px !important; }
       #work .work-grid > div > p { display:none !important; }
       #work { padding:20px 16px !important; }
       #work .section-header { margin-bottom:12px !important; }
